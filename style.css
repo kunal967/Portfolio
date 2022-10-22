@@ -1,17 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Oxygen&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
+    background: linear-gradient(90deg,#fdfbfb, #eceeef);
+    height: 100vh;
+
 }
 .navbar{
-    padding-right: 5%;
+    /* background: #666f79; */
+    /* padding-right: 4%; */
+    width: 100%;
+    
+}
+.nav-outer{
+    display: flex;
+
+}
+.nav-button button{
+    background-color:rgb(80, 112, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    color: #eceeef;
+    justify-content: center;
+}
+.nav-button{
+    display: flex;
+    padding: 8px 0px;
 }
 .navbar ul{
+    margin: 0;
+    padding: 15px 0px;
     list-style: none;
     display: flex;
-    width: 100%;
-    justify-content: flex-end;
+    
+    justify-content: center;
     align-items: center;
 }
 .navbar ul li{
-    padding-left: 10px;
+    padding-left: 15px;    
+}
+.navbar ul li a{
+    font-family: 'Acme', sans-serif;
+    font-size: 16px;
+    border: white;
+    border-width: 20px;
+    border-radius: 25%;
+    text-decoration: none;
+    color: rgb(80, 112, 255);
 }
