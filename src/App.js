@@ -1,9 +1,10 @@
-function App() {
-  return (
-    <div>
-      Hello World
-    </div>
-  );
-}
+// import Main from "./Main/Main";
+// import Navbar from "./Navbar/navbar";
 
-export default App;
+// function App() {
+//   return (
+//     <Navbar />
+//   );
+// }
+
+// export default App;
