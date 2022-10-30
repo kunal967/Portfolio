@@ -1,13 +1,16 @@
 import React from 'react'
 import Navbar from '../Navbar/navbar'
+import About from './About/about'
+// import Contact from './Contact/contact';
 
-
-const Main = () => {
+function Main() {
   return (
-    <div className='h-screen bg-purple-100'>
-        <Navbar/>
-    </div>
-  )
+    <>
+    <Navbar />
+    <About />
+  
+    </>
+  );
 }
 
-export default Main
+export default Main;

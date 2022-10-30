@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.skill_btn{
+    font-size: medium;
+    background-color: rgb(244, 221, 255);
+    border: 0px solid;
+    border-radius: 5px;
+    padding: 10px 15px; 
+    margin: 5px;
+    
+
+}
