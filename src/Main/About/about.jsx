@@ -2,23 +2,23 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="h-max p-5 bg-purple-100">
-      <h2 className="font-portfolio text-center mt-10 text-4xl font-bold text-purple-700">
+    <div className="h-max sm:h-screen  p-5 bg-home">
+      <h2 className="font-portfolio text-center mt-10 w-fit sm:w-screen text-4xl font-bold text-nav-text">
         ABOUT ME
       </h2>
-      <div className="text-center mt-5 mb-8 font-portfolio w-full text-purple-600">
-        <span className="w-16 ">
+      <div className="text-center mt-5 mb-8 font-portfolio w-full text-text">
+        <span className="text-center pr-10 pl-10 text-text font-bold text-lg">
           I'm a Frontend Web Developer building the Front-end of Websites and
           Web Applications that leads to the success of the overall product.
         </span>
       </div>
       
       <div className="flex flex-col sm:grid gap-14 grid-cols-2">
-        <div className=" text-purple-600 bg-purple-50 rounded-lg p-4 text-left">
+        <div className=" text-home bg-navbar rounded-lg p-8 text-left">
       
           {/* about me text */}
-          <span className="font-bold text-purple-800 text-2xl block text-start pb-6 ">Get to know me</span>
-          <span className="font-portfolio ">
+          <span className="font-bold text-nav-text text-4xl block text-start pb-6 ">Get to know me</span>
+          <span className="font-portfolio text-2xl ">
 
           I'm a Frontend Web Developer building the Front-end of Websites and
           Web Applications that leads to the success of the overall product.
@@ -32,9 +32,9 @@ const About = () => {
           hesitate to contact me.
           </span>
         </div>
-        <div className="text-purple-600 bg-purple-50 rounded-lg p-4 text-left">{/* my skills */}
-        <span className="font-bold text-purple-800 text-2xl block text-start pb-6" >My Skills</span>
-        <div className="flex flex-wrap overflow-hidden ">
+        <div className="text-purple-600 bg-navbar rounded-lg p-4 text-left mb-10">{/* my skills */}
+        <span className="font-bold text-nav-text text-4xl block text-start pb-6" >My Skills</span>
+        <div className="flex flex-wrap overflow-hidden text-2xl">
             <div className="skill_btn ">Python</div>
             <div className="skill_btn ">HTML & CSS</div>
             <div className="skill_btn">Javascript (es6 & above)</div>

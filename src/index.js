@@ -10,6 +10,7 @@ import Contact from "./Main/Contact/contact";
 import Home from "./Main/Home/home";
 import Main from "./Main/Main";
 import Projects from "./Main/Projects/Projects";
+// import Navbar from "./Navbar/navbar";
 
 export default function App() {
   return (
