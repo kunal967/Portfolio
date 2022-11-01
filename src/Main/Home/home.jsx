@@ -2,6 +2,7 @@ import React from "react";
 import About from "../About/about";
 import Contact from "../Contact/contact";
 import Projects from "../Projects/Projects";
+import Resume from "../../images/Kunal_Takalkar.pdf"
 
 const Home = () => {
   return (
@@ -12,13 +13,13 @@ const Home = () => {
           Hey, I am Kunal Takalkar
           {/* <span className="text-nav-text pl-3 text-7xl hover:capitalize ">  Kunal Takalkar </span> */}
         </span>
-        <span className="flex justify-center font-semibold text-2xl pr-10 pl-10 text-center text-text ">
+        <span className="flex justify-center font-semibold text-2xl pr-10 pl-10 text-center pb-10 text-text ">
           A Frontend focused Web Developer building the Frontend of Websites and
           Web Applications <br /> that leads to the success of the overall
           product
         </span>
         <br />
-        <button
+        <a href={Resume} download="Kunal_Takalkar.pdf"
           className="cursor-pointer
         shadow-2xl
         mt-10
@@ -34,7 +35,7 @@ const Home = () => {
         >
           {" "}
           Download My CV
-        </button>
+        </a>
       </div>
       <div className="h-max sm:h-screen">
         <About />

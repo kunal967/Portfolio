@@ -12,10 +12,14 @@ module.exports = {
       "navbar" : "rgb(34, 40, 49)",
       "text" : "rgb(57, 62, 70)",
       "home" : "rgb(238, 238, 238)",
-      "nav-text" : "rgb(0, 173, 181)"
+      "nav-text" : "rgb(0, 173, 181)",
+      "nav-hover" : "#51E4EA"
+
       
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    // require('@tailwindcss/forms'),
+  ],
 }

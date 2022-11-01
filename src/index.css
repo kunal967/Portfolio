@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    /* width: fit-content; */
-    
-}
+/* *{
+    @media screen and (max-width : 640px)  {
+        body{
+            width: fit-content;
+        }
+        
+    }
+    @media  screen and (min-width : 810) {
+        body{
+            width : 100vw;
+        }
+    }
+} */
 
 .skill_btn{
     font-size: 1.5rem/* 24px */;
