@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="h-max sm:h-screen bg-home">
-      <div>
+    <div className="h-max sm:h-screen relative top-4 sm:top-8  bg-home">
+      <div className="mr-3 ml-3">
         <h2 className="font-portfolio text-center mt-10 w-fit sm:w-screen text-4xl font-bold text-nav-text">
           ABOUT ME
         </h2>
