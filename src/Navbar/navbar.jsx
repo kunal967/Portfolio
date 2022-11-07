@@ -12,8 +12,8 @@ const Navbar = () => {
   const [sidebarOn, setSidebarOn] = useState(false);
   return (
     <>
-      <div className="w-screen ">
-        <nav className="sm:flex sm:justify-between w-full sm:w-screen bg-navbar fixed top-0 z-[2] left-0 pb-2 ">
+      <div className="absolute ">
+        <nav className="sm:flex sm:justify-around w-full sm:w-full bg-navbar fixed top-0 z-[2] left-0 pb-2 ">
           <div className="flex content-center items-center ml-8 font-portfolio font-bold text-2xl pt-3 sm:pt-0 text-nav-text">
             PORTFOLIO
           </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
             <ion-icon name={sidebarOn ? "menu" : "close"}></ion-icon>
           </div>
           <ul
-            className={`sm:flex sm:items-center font-portfolio bg-navbar text-nav-text pb-4 pr-3 sm:pb-0 absolute sm:static sm:z-auto z-[-1]  left-0 w-full sm:w-auto sm:pl-0 text-center transition-all duration-500 ease-in ${
+            className={`sm:flex sm:items-center font-portfolio bg-navbar  text-nav-text pb-4  sm:pb-0 absolute sm:static sm:z-auto z-[-1]  left-0 w-full sm:w-auto sm:pl-0 text-center transition-all duration-500 ease-in ${
               sidebarOn ? "top-[-490px]" : "top-12  opacity-100 "
             } sm:opacity-100 opacity-00 `}
           >

@@ -7,7 +7,7 @@ import Resume from "../../images/Kunal_Takalkar.pdf"
 const Home = () => {
   return (
     <div className="h-max w-fit sm:w-screen text-center bg-home">
-      <div className="h-screen text-center ">
+      <div className="h-screen text-center block m-auto">
         <span className="font-bold font-portfolio text-6xl w-fit sm:w-screen flex text-flex-end justify-center pt-36 pb-6 text-text">
           {/* HEY, I'M KUNAL TAKALKAR{" "} */}
           Hey, I am Kunal Takalkar
@@ -37,13 +37,24 @@ const Home = () => {
           Download My CV
         </a>
       </div>
-      <div className="h-max sm:h-screen">
+      <div className="flex justify-center ">
+        <div>
+        <ion-icon name="logo-github"></ion-icon>
+        </div>
+        <div>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+        <div>
+        <ion-icon name="logo-github"></ion-icon>
+        </div>
+      </div>
+      <div className="h-max sm:h-max">
         <About />
       </div>
-      <div className="h-max sm:h-screen">
+      <div className="h-max sm:h-max">
         <Projects />
       </div>
-      <div className="h-max sm:h-screen">
+      <div className="h-max sm:h-max">
         <Contact />
       </div>
     </div>
