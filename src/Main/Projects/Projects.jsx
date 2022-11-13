@@ -1,7 +1,7 @@
 import React from "react";
 import boxOffice from "../../images/Box-office-img.png";
 import chatBox from "../../images/Chat-Box-img.png";
-import Expence from "../../images/Expense-tracker-img.png";
+import Expence from "../../images/expencetracker-removebg-preview.png";
 import ticTacToe from "../../images/tic-tac-toe-removebg-preview.png";
 
 const PROJECTS = [
@@ -37,7 +37,7 @@ const PROJECTS = [
 
 const Projects = () => {
   return (
-    <div className="h-full pr-10 pl-10 mb-40">
+    <div className="h-full pr-10 pl-10 mb-40 text-center">
       <div className="font-portfolio text-nav-text relative top-24 text-center text-5xl font-semibold">
         Projects
       </div>
@@ -46,18 +46,18 @@ const Projects = () => {
           Have a look at some of my projects...😉
         </div>
         <div>
-          <div className="flex flex-wrap  relative top-48 md:grid md:grid-cols-2 md:gap-10 md:relative md:top-48 ">
+          <div className="flex flex-wrap  relative top-48 md:grid md:grid-row-2 md:gap-10 md:relative md:top-48 ">
             {Object.values(PROJECTS).map((id) => {
               return (
-                <div className="mb-8 md:mb-0 " key={id}>
+                <div className="mb-8 md:mb-0 flex items-center" key={id.id}>
                   <div className="flex justify-center">
                     <img
-                      className="justify-self-center "
+                      className="justify-self-center text-center"
                       src={id.image}
                       alt={id.name}
                     />
                   </div>
-                  <div className="relative md:top-[-15%]">
+                  <div className="relative md:top-[-15%] w-3/5">
                     <div className="relative top-[-2rem] md:top-0">
                       <div className="text-3xl font-bold relative text-nav-text ">
                         {id.name}
@@ -70,7 +70,7 @@ const Projects = () => {
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        className="h-10 m-5 w-36 font-semibold border-b-navbar bg-nav-text text-home hover:bg-home hover:border-2 rounded-3xl hover:border-nav-text hover:text-nav-text "
+                        className="h-10 m-5 w-36 font-semibold flex items-center justify-center border-b-navbar bg-nav-text text-home hover:bg-home hover:border-2 rounded-3xl hover:border-nav-text hover:text-nav-text "
                         href={id.url}
                       >
                         See Live Demo

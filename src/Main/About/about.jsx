@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="h-full sm:h-screen w-screen relative top-4 sm:top-8  bg-home">
+    <div className="h-full sm:h-screen w-screen relative top-4 sm:top-16  bg-home">
       <div className="block m-4 sm:m-0">
         <div className="text-center text-4xl font-portfolio font-bold text-nav-text hover:text-5xl hover:text-nav-hover ">
           About Me
