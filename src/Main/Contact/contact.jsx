@@ -23,7 +23,7 @@ const Contact = () => {
       <div className="text-center font-portfolio font-bold text-5xl text-nav-text mt-6 mb-10  ">
         Let's Chat
       </div>
-      <div className="text-center w-2/3  sm:w-2/4 bg-navbar p-6 rounded-xl block m-auto">
+      <div className="text-center w-2/3  sm:w-1/3 bg-navbar p-6 rounded-xl block m-auto">
         <div className="">
           <form
             action={FORM_ENDPOINT}
@@ -61,6 +61,7 @@ const Contact = () => {
             <div className="mb-3 pt-0">
               <textarea
                 placeholder="Your message"
+                rows={10}
                 name="message"
                 className="px-3 py-3 placeholder-gray-400 text-gray-600 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring w-full"
                 required

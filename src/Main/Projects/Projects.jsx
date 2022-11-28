@@ -37,7 +37,7 @@ const PROJECTS = [
 
 const Projects = () => {
   return (
-    <div className="h-full pr-10 pl-10 mb-40 text-center">
+    <div className="h-full sm:w-screen pr-10 pl-10 mb-40 text-center">
       <div className="font-portfolio text-nav-text relative top-24 text-center text-5xl font-semibold">
         Projects
       </div>
@@ -46,10 +46,10 @@ const Projects = () => {
           Have a look at some of my projects...😉
         </div>
         <div>
-          <div className="flex flex-wrap  relative top-48 md:grid md:grid-row-2 md:gap-10 md:relative md:top-48 ">
+          <div className="flex flex-wrap justify-center relative top-48 md:grid md:grid-row-2 md:gap-10 md:relative md:top-48 ">
             {Object.values(PROJECTS).map((id) => {
               return (
-                <div className="mb-8 md:mb-0 flex items-center" key={id.id}>
+                <div className="mb-8 md:mb-0 flex justify-center flex-wrap items-center" key={id.id}>
                   <div className="flex justify-center">
                     <img
                       className="justify-self-center text-center"
@@ -66,14 +66,14 @@ const Projects = () => {
                         {id.desc}
                       </div>
                     </div>
-                    <div className="flex align-middle justify-center relative top-12">
+                    <div className="flex  md:align-middle justify-center relative md:top-12">
                       <a
                         target="_blank"
                         rel="noreferrer"
-                        className="h-10 m-5 w-36 font-semibold flex items-center justify-center border-b-navbar bg-nav-text text-home hover:bg-home hover:border-2 rounded-3xl hover:border-nav-text hover:text-nav-text "
+                        className=" h-10 m-5 w-52 md:w-36   font-semibold flex items-center justify-center border-b-navbar bg-nav-text text-home hover:bg-home hover:border-2 rounded-3xl hover:border-nav-text hover:text-nav-text "
                         href={id.url}
                       >
-                        See Live Demo
+                        See Live 
                       </a>
                       <button className="h-10 m-5 w-36 font-semibold border-b-navbar bg-nav-text text-home hover:bg-home hover:border-2 rounded-3xl hover:border-nav-text hover:text-nav-text ">
                         More
@@ -92,14 +92,4 @@ const Projects = () => {
 
 export default Projects;
 
-//<img src={boxOffice} alt="box office" />
-//<img src={chatBox} alt="chat box" />
-//<img src={Expence} alt="Expence Tracker" />
-//<img src={ticTacToe} alt="Tic-Tac-Toe" />
-// className="font-portfolio text-nav-text relative top-28 text-center text-5xl font-semibold"
 
-// {PROJECTS.map((name) => (
-
-//   <div key={name.name} className="">{name.name} </div>
-
-// ))}

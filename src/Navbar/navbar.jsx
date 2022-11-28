@@ -9,12 +9,12 @@ const LINKS = [
 ];
 
 const Navbar = () => {
-  const [sidebarOn, setSidebarOn] = useState(false);
+  const [sidebarOn, setSidebarOn] = useState(true);
   return (
     <>
       <div className="absolute ">
-        <nav className="sm:flex sm:justify-around w-full sm:w-full bg-navbar fixed top-0 z-[2] left-0 pb-2 ">
-          <div className="flex content-center items-center ml-8 font-portfolio font-bold text-2xl pt-3 sm:pt-0 text-nav-text">
+        <nav className="sm:flex sm:justify-around w-full sm:w-full bg-navbar fixed top-0 z-[2] left-0 pb-2 drop-shadow-lg">
+          <div className="flex content-center align-middle items-center ml-8 font-portfolio font-bold text-2xl pt-3 sm:pt-0 text-nav-text">
             PORTFOLIO
           </div>
           <div
